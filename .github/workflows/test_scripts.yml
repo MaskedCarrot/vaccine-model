@@ -22,11 +22,11 @@ jobs:
           environment-file: environment.yml
           python-version: 3.8.8
           
-      - name: Execute all Notebooks
+      - name: Execute all scripts
         shell: bash -l {0}
         run: |
           conda activate SE-env 
-          run: for script in $scripts; do [python3 script]; done
+          run: for script in $scripts do python3 script done
           
           
 
