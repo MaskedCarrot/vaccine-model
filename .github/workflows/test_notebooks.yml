@@ -26,9 +26,11 @@ jobs:
         shell: bash -l {0}
         run: |
           conda activate SE-env 
-          run: for notebook in $notebooks 
+          pwd
+          cd notebook
+          run: for notebook in *; 
           do
-           jupyter nbconvert --execute --clear-output notebook
+           jupyter nbconvert --execute --clear-output notebook;
            done
           
           
