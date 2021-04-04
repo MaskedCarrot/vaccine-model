@@ -1,0 +1,36 @@
+name: Test-Notebooks
+
+# Run every time a new commit is pushed
+on: push
+
+jobs:
+  # Set the job key
+  test-notebooks:
+    # Name the job
+    name: run jupyter notebooks
+    # Set the type of machine to run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install conda environment
+        uses: conda-incubator/setup-miniconda@v1
+        with:
+          activate-environment: SE-env
+          environment-file: environment.yml
+          python-version: 3.8.8
+          
+      - name: Install conda environment
+        shell: bash -l {0}
+        run:        
+
+      - name: Execute all Notebooks
+        shell: bash -l {0}
+        run: |
+          conda activate SE-env 
+          run: for notebook in $notebooks; do [jupyter nbconvert --execute --clear-output notebook]; done
+          
+          
+
