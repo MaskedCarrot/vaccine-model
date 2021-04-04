@@ -22,10 +22,6 @@ jobs:
           environment-file: environment.yml
           python-version: 3.8.8
           
-      - name: Install conda environment
-        shell: bash -l {0}
-        run:        
-
       - name: Execute all Notebooks
         shell: bash -l {0}
         run: |
