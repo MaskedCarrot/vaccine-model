@@ -25,7 +25,7 @@ jobs:
       - name: Execute all Notebooks
         shell: bash -l {0}
         run: |
-          conda activate SE-env 
+          source activate SE-env 
           pwd
           cd notebook
           run: for notebook in *; 
