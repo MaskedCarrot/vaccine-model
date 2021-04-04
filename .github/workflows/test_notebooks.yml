@@ -28,7 +28,7 @@ jobs:
           source activate SE-env 
           pwd
           cd notebook
-          run: for notebook in *; 
+          for notebook in *; 
           do
            jupyter nbconvert --execute --clear-output $notebook;
            done
