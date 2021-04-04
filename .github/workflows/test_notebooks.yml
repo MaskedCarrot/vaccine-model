@@ -30,7 +30,7 @@ jobs:
           cd notebook
           run: for notebook in *; 
           do
-           jupyter nbconvert --execute --clear-output notebook;
+           jupyter nbconvert --execute --clear-output $notebook;
            done
           
           
