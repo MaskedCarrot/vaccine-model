@@ -1,13 +1,13 @@
-name: Test-Notebooks
+name: Test python scripts
 
 # Run every time a new commit is pushed
 on: push
 
 jobs:
   # Set the job key
-  test-notebooks:
+  test-scripts:
     # Name the job
-    name: run jupyter notebooks
+    name: run python scripts
     # Set the type of machine to run on
     runs-on: ubuntu-latest
 
@@ -22,15 +22,14 @@ jobs:
           environment-file: environment.yml
           python-version: 3.8.8    
 
-      - name: Execute all Notebooks
+      - name: Execute all scripts
         shell: bash -l {0}
         run: |
           conda activate SE-env 
-          pwd
-          cd notebook
-          for notebook in *; 
+          cd scripts
+          for script in *; 
           do
-           jupyter nbconvert --execute --clear-output $notebook;
+           python3 $script;
            done
           
           
