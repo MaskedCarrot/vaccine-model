@@ -26,7 +26,8 @@ jobs:
         shell: bash -l {0}
         run: |
           conda activate SE-env 
-          for script in scripts/*; 
+          cd scripts
+          for script in *; 
           do
            python3 $script;
            done
