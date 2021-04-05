@@ -42,9 +42,7 @@ combined_df = pd.merge(merge1_df, vaccine_data_set_df,
 #to remove unnamed columns
 combined_df = combined_df.loc[:, ~combined_df.columns.str.contains('^Unnamed')]
 pd.set_option('display.max_columns', None)
-print(combined_df)
-#combined_df.to_csv('combined_data.csv')
-#Apoorv - remove unvanted columns according to need
 
+combined_df.to_csv('combined_data.csv')
 
-
+os.chdir('../scripts')
