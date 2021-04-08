@@ -11,7 +11,7 @@ vaccine_df = pd.read_csv(VACCINATION_CSV_URL)
 cases_df = pd.read_csv(CASES_CSV_URL)
 
 # change directory to data
-os.chdir('data')
+os.chdir('../data')
 
 
 # clean vaccine data
@@ -37,4 +37,4 @@ cases_reduced_df = cases_df.pivot_table('cases', ['Date' ,'state'],'Status')
 
 cases_reduced_df.to_csv('daily-cases.csv')
 
-os.chdir('..')
+os.chdir('../scripts')

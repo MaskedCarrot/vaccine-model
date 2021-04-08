@@ -2,7 +2,7 @@
 import pandas as pd
 import os
 
-os.chdir('data')
+os.chdir('../data')
 
 # downloads the csv and convert it into pandas dataframe
 state_details_df = pd.read_csv("state-details.csv")
@@ -45,4 +45,4 @@ pd.set_option('display.max_columns', None)
 
 combined_df.to_csv('combined_data.csv')
 
-os.chdir('..')
+os.chdir('../scripts')

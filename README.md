@@ -1,5 +1,11 @@
 # Prediction and Analysis of State-Wise Distribution of Vaccine for Covid-19
 
+[![Test python scripts](https://github.com/MaskedCarrot/vaccine-model/actions/workflows/test_scripts.yml/badge.svg)](https://github.com/MaskedCarrot/vaccine-model/actions/workflows/test_scripts.yml)
+
+
+[![Test jupyter notebooks](https://github.com/MaskedCarrot/vaccine-model/actions/workflows/test_notebooks.yml/badge.svg)](https://github.com/MaskedCarrot/vaccine-model/actions/workflows/test_notebooks.yml)
+
+
 Members: Apoorv Srivastava, Ritik Katiyar
 
 ## Project Design
