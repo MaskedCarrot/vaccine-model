@@ -19,7 +19,7 @@ json_list = []
 
 
 fieldnames = ['date', 'text']
-with open('data/vaccine-tweets3.csv', 'w') as outfile:
+with open('../data/vaccine-tweets.csv', 'w') as outfile:
     writer = csv.DictWriter(outfile, fieldnames=fieldnames)
     writer.writeheader()
     for tweet in tweets:

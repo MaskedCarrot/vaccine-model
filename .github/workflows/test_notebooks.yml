@@ -29,5 +29,5 @@ jobs:
           cd notebook
           for notebook in *; 
           do
-           jupyter nbconvert --execute --clear-output $notebook;
+           runipy $notebook --quiet
            done
