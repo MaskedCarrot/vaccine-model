@@ -20,7 +20,7 @@ jobs:
         with:
           activate-environment: SE-env
           environment-file: environment.yml
-          python-version: 3.8.8
+          python-version: 3.9.4
 
       - name: Execute all Notebooks
         shell: bash -l {0}
@@ -29,5 +29,5 @@ jobs:
           cd notebook
           for notebook in *; 
           do
-           jupyter nbconvert --execute --clear-output $notebook;
+           runipy $notebook --quiet
            done

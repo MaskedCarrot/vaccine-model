@@ -23,13 +23,13 @@ jobs:
         with:
           activate-environment: SE-env
           environment-file: environment.yml
-          python-version: 3.8.8
+          python-version: 3.9.4
 
       - name: update contests json
         shell: bash -l {0}
         run: |
           conda activate SE-env
-          python3 twitter.py
+          python3 twitter.py 1
 
       - name: Commit contests json
         run: |
