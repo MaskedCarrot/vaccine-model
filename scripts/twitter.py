@@ -24,7 +24,7 @@ else:
     api = tweepy.API(auth, wait_on_rate_limit=True)
     date_since = "2018-11-16"
     tweets = tweepy.Cursor(api.search, q='covaxin -filter:retweets',
-                           lang="en", since=date_since).items(100000)
+                           lang="en", since=date_since).items(1000000)
     json_list = []
 
     with open('../data/vaccine-tweets.csv', 'w') as outfile:
