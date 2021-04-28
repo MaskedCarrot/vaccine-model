@@ -2,8 +2,6 @@
 
 [![Test python scripts](https://github.com/MaskedCarrot/vaccine-model/actions/workflows/test_scripts.yml/badge.svg)](https://github.com/MaskedCarrot/vaccine-model/actions/workflows/test_scripts.yml)
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/0f424492fa4e45c6ba5a2042c840c823)](https://www.codacy.com/gh/MaskedCarrot/vaccine-model/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MaskedCarrot/vaccine-model&amp;utm_campaign=Badge_Grade)
-
 Members: Apoorv Srivastava, Ritik Katiyar
 
 
